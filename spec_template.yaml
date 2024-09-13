@@ -1,0 +1,18 @@
+type: operation_policy_specification
+version: v4.2.0
+data:
+  category: Mediation
+  name: ${Name}
+  version: ${version}
+  displayName: ${DisplayName}
+  description: This is a mediation policy migrated to an common operation policy.
+  applicableFlows:
+    - ${applicableFlow}
+  supportedGateways:
+    - Synapse
+  supportedApiTypes:
+    - HTTP
+    - SOAP
+    - SOAPTOREST
+    - GRAPHQL
+  policyAttributes: []
