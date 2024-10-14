@@ -1,20 +1,8 @@
 package org.wso2.policy.migrator;
 
-
-import org.apache.axis2.client.Options;
-import org.apache.axis2.transport.http.HTTPConstants;
-import org.apache.axis2.transport.http.HttpTransportProperties;
-import org.apache.axis2.client.ServiceClient;
-import org.apache.axiom.soap.SOAP11Constants;
 import org.apache.commons.httpclient.ConnectTimeoutException;
 import org.apache.commons.httpclient.params.HttpConnectionParams;
-import org.apache.commons.httpclient.protocol.Protocol;
 import org.apache.commons.httpclient.protocol.ProtocolSocketFactory;
-import org.apache.commons.httpclient.HttpClient;
-import org.apache.commons.httpclient.params.HttpConnectionManagerParams;
-import org.apache.axis2.transport.http.CommonsHTTPTransportSender;
-import org.wso2.carbon.registry.resource.stub.ResourceAdminServiceStub;
-import org.wso2.carbon.registry.resource.stub.beans.xsd.CollectionContentBean;
 
 import javax.net.ssl.*;
 import java.io.FileInputStream;
@@ -24,8 +12,6 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 import java.security.KeyStore;
 import java.security.SecureRandom;
-import java.security.cert.CertificateException;
-import java.security.cert.X509Certificate;
 
 public class CustomSSLProtocolSocketFactory implements ProtocolSocketFactory{
     private SSLContext sslContext = null;
